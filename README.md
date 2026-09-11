@@ -6,8 +6,7 @@ Research Question; How accurately do UK economic forecasts predict subsequent ec
 
 The analysis focuses on:
 
-UK GDP growth
-UK CPI inflation
+UK GDP growth, UK CPI inflation
 
 Methodology
 
