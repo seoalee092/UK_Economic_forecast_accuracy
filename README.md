@@ -1,4 +1,5 @@
 **UK Economic Forecast Accuracy & Bias Analysis**
+
 Research Question; How accurately do UK economic forecasts predict subsequent economic outcomes?
 
 - This project evaluates the accuracy and systematic bias of four-quarter-ahead UK economic forecasts by comparing forecasted outcomes with subsequently realised data.
