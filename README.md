@@ -5,22 +5,25 @@ Research Question; How accurately do UK economic forecasts predict subsequent ec
 - This project evaluates the accuracy and systematic bias of four-quarter-ahead UK economic forecasts by comparing forecasted outcomes with subsequently realised data.
 
 The analysis focuses on:
-
-UK GDP growth, UK CPI inflation
+- UK GDP growth
+- UK CPI inflation
 
 Methodology
 
 - Historical four-quarter-ahead forecasts are compared with realised economic outcomes.
 
-Forecast error is defined as: Forecast Error = Forecast − Actual
+*Forecast error is defined as: Forecast Error = Forecast − Actual
 
-to evaluate forecast performance:
+To evaluate forecast performance:
 
-Mean Error (Bias): measures systematic over- or under-prediction
-Mean Absolute Error (MAE): measures the average magnitude of forecast errors
-Root Mean Squared Error (RMSE): gives greater weight to large forecast errors
+- Mean Error (Bias): measures systematic over- or under-prediction
+- Mean Absolute Error (MAE): measures the average magnitude of forecast errors
+- Root Mean Squared Error (RMSE): gives greater weight to large forecast errors
 
 *A positive Mean Error indicates overprediction, while a negative Mean Error indicates underprediction.
+
+Correcting for look-ahead bias
+- An earlier version of the pipeline grouped forecasts by target date and kept only the last (most recent) vintage for each date. This inadvertently used later, more-informed vintages to stand in for earlier ones —  using information that wasn't yet available at that time. The pipeline was corrected to align each forecast strictly by its own vintage date and horizon, so that only information available at the time of the forecast is used.
 
 Key Results
 
